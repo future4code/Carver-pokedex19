@@ -1,9 +1,9 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Fernando Orsini
+- Luiza Cioffi
+- Mayra Dias
 
 Link do Surge: www.link.com.br
 
