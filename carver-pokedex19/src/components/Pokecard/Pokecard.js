@@ -8,35 +8,23 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-});
+const Pokecard = () => {
 
-export default function Pokecard(props) {
-  const classes = useStyles();
-
+  const cartCards = cart.map((prod) => {
+    return (
+      <CartItem key={prod.id} product={prod} removeFromCart={removeFromCart} />
+    );
+  });
+  
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h1">
-            {props.title.toUpperCase()}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.body}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button onClick={props.onClick} size="small" variant="contained" color="primary">
-            Comentários
-        </Button>
-        <Button onClick={props.onClick} size="small" variant="contained" color="secondary">
-            Votos
-        </Button>
-      </CardActions>
-    </Card>
-  );
+    <ScreenContainer>
+      {cartCards}
+      <h1>Total: R${Number(priceToPay).toFixed(2)}</h1>
+      <button onClick={() => goToProductsScreen(history)}>
+        Continuar Comprando
+      </button>
+    </ScreenContainer>
+  )
 }
+
+export default Pokecard
