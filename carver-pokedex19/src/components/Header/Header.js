@@ -4,6 +4,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { goToPokedex } from '../../routes/coordinator';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -19,18 +21,21 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
+
+
 const Header = () => {
+  const history = useHistory();
   const classes = useStyles();
 
   return (
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" className={classes.title}>
           Pokédex
-          </Typography>
-          <Button color="inherit">Ir para Pokedex</Button>
-        </Toolbar>
-      </AppBar>
+        </Typography>
+        <Button color="inherit" onClick={() => goToPokedex(history)}>Ir para Pokedex</Button>
+      </Toolbar>
+    </AppBar>
   );
 }
 
