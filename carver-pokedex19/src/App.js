@@ -7,7 +7,6 @@ import Router from './routes/Router';
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Header/>
       <Router/>
     </ThemeProvider>
   );

@@ -1,11 +1,11 @@
 export const goToHome = (history) => {
-    history.push("/")
-}
+    history.push("/");
+};
 
 export const goToPokedex = (history) => {
-    history.push("/pokedex")
-}
+    history.push('/pokedex');
+};
 
 export const goToDetail = (history) => {
-    history.push("/detail")
-}
+    history.push("/detail");
+};

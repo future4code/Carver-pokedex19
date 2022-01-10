@@ -3,11 +3,13 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DetailPage from '../pages/DatailPage/DetailPage';
 import HomePage from '../pages/HomePage/HomePage';
 import PokedexPage from '../pages/PokedexPage/PokedexPage';
-import ErrorPage from '../pages/ErrorPage/ErrorPage'
+import ErrorPage from '../pages/ErrorPage/ErrorPage';
+import Header from '../components/Header/Header';
 
 const Router = () => {
   return (
     <BrowserRouter>
+        <Header/>
         <Switch>
             <Route exact path="/">
                 <HomePage/>
