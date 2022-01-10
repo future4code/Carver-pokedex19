@@ -9,7 +9,7 @@
 - [Luiza Cioffi](https://github.com/Luizagac)
 - [Mayra Dias](https://github.com/Mayra-bdias)
 
-Link do Surge: https://projeto-pokedex.surge.sh/
+Link do Surge: https://rural-horn.surge.sh/
 
 ## ⚙️ O que funciona:
 - Permite visualizar os Pokémons da [PokeAPI](https://pokeapi.co/)
